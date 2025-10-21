@@ -1,4 +1,4 @@
-/* Reset i podstawowe style */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER */
+
 header {
   background-color: #2c3e50;
   color: white;
@@ -26,26 +26,26 @@ header h1 {
   font-size: 1.8rem;
 }
 
-/* Menu */
+
 nav#nav {
   display: flex;
   gap: 30px;
 }
 
-/* Styl linków w nagłówku */
+
 nav#nav h3 {
   margin: 0;
 }
 
 nav#nav h3 a {
-  color: white;             /* białe linki */
-  text-decoration: none;    /* usuń podkreślenie */
+  color: white;             
+  text-decoration: none;   
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 nav#nav h3 a:hover {
-  color: #1abc9c;           /* delikatny efekt hover */
+  color: #1abc9c;          
 }
 
 /* MAIN */
@@ -128,7 +128,7 @@ footer {
   color: #555;
 }
 
-/* PROJECT CARDS */
+
 .projects {
   display: flex;
   gap: 20px;
@@ -164,7 +164,7 @@ footer {
   text-decoration: underline;
 }
 
-/* CONTACT FORM */
+
 form {
   display: flex;
   flex-direction: column;
@@ -200,7 +200,7 @@ form button:hover {
   background-color: #159a83;
 }
 
-/* Responsywność dla team i projects */
+
 @media (max-width: 768px) {
   .team, .projects {
     flex-direction: column;
