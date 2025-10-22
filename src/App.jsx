@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import eryk from './assets/images/eryk.png';
-import giant from './assets/images/giant.png';
+
 import './App.css'
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
           <h3>About us</h3>
           <div className="team">
             <div className="member">
-              <img src={eryk} alt="zdjecieEryka" />
+              <img src="../assets/images/eryk.png" alt="zdjecieEryka" />
               <h4>Eryk</h4>
               <p>Skills: and Achievements:</p>
               <ul>
@@ -32,7 +31,7 @@ function App() {
               </ul>
             </div>
             <div className="member">
-              <img src={giant} alt="zdjecieGianta" />
+              <img src="../assets/images/giant.png" alt="zdjecieGianta" />
               <h4>Giant</h4>
               <p>Skills and Achievements:</p>
               <ul>
