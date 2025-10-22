@@ -23,12 +23,24 @@ function App() {
             <div className="member">
               <img src={eryk} alt="zdjecieEryka" />
               <h4>Eryk</h4>
-              <p>Skills:</p>
+              <p>Skills: and Achievements:</p>
+              <ul>
+                <li>Manuel Neuer in Rocket League</li>
+                <li>Stopped smoking after 5 years</li>
+                <li>GitHub expert</li>
+                <li>Have new MacBook air, so is rich</li>
+              </ul>
             </div>
             <div className="member">
               <img src={giant} alt="zdjecieGianta" />
               <h4>Giant</h4>
-              <p>Skills:</p>
+              <p>Skills and Achievements:</p>
+              <ul>
+                <li>Diamond 3, division 3 in Rocket League one year ago</li>
+                <li>Retired legendary footballer of Iskra Pszczyna</li>
+                <li>HTML expert</li>
+                <li>Have new MacBook air, so is rich</li>
+              </ul>
             </div>
           </div>
         </section>
