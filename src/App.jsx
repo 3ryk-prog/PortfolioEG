@@ -1,7 +1,8 @@
 import { useState } from 'react'
 
 import './App.css'
-
+import eryk from './assets/images/eryk.png';
+import giant from './assets/images/giant.png';
 function App() {
   return (
     <>
@@ -20,7 +21,7 @@ function App() {
           <h3>About us</h3>
           <div className="team">
             <div className="member">
-              <img src="./assets/images/eryk.png" alt="zdjecieEryka" />
+              <img src={eryk} alt="zdjecieEryka" />
               <h4>Eryk</h4>
               <p>Skills: and Achievements:</p>
               <ul>
@@ -31,7 +32,7 @@ function App() {
               </ul>
             </div>
             <div className="member">
-              <img src="./assets/images/giant.png" alt="zdjecieGianta" />
+              <img src={giant} alt="zdjecieGianta" />
               <h4>Giant</h4>
               <p>Skills and Achievements:</p>
               <ul>
