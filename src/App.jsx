@@ -20,7 +20,7 @@ function App() {
           <h3>About us</h3>
           <div className="team">
             <div className="member">
-              <img src="../assets/images/eryk.png" alt="zdjecieEryka" />
+              <img src="./assets/images/eryk.png" alt="zdjecieEryka" />
               <h4>Eryk</h4>
               <p>Skills: and Achievements:</p>
               <ul>
@@ -31,7 +31,7 @@ function App() {
               </ul>
             </div>
             <div className="member">
-              <img src="../assets/images/giant.png" alt="zdjecieGianta" />
+              <img src="./assets/images/giant.png" alt="zdjecieGianta" />
               <h4>Giant</h4>
               <p>Skills and Achievements:</p>
               <ul>
