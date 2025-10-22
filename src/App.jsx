@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import eryk from '../assets/images/eryk.png';
-import giant from '../assets/images/giant.png';
+import eryk from './assets/images/eryk.png';
+import giant from './assets/images/giant.png';
 import './App.css'
 
 function App() {
