@@ -133,6 +133,11 @@ footer {
   padding: 0;
 }
 
+.member ul li{
+  font-size: 0.8rem;
+  color: #555;
+}
+
 .projects {
   display: flex;
   gap: 20px;
