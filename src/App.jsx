@@ -52,7 +52,8 @@ function App() {
             <div className="member">
               <img src={eryk} alt="zdjecieEryka" />
               <h4>Eryk</h4>
-              <p>Skills: and Achievements:</p>
+              <p><b>Skills: and Achievements:</b></p>
+              <br />
               <ul>
                 <li>Manuel Neuer in Rocket League</li>
                 <li>Stopped smoking after 5 years</li>
@@ -63,7 +64,8 @@ function App() {
             <div className="member">
               <img src={giant} alt="zdjecieGianta" />
               <h4>Giant</h4>
-              <p>Skills and Achievements:</p>
+              <p><b>Skills: and Achievements:</b></p>
+              <br />
               <ul>
                 <li>Diamond 3, division 3 in Rocket League</li>
                 <li>Retired legendary footballer of Iskra Pszczyna</li>
