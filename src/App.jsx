@@ -52,7 +52,7 @@ function App() {
             <div className="member">
               <img src={eryk} alt="zdjecieEryka" />
               <h4>Eryk</h4>
-              <p>Skills: and Achievements:</p>
+              <p>Skills and Achievements:</p>
               <ul>
                 <li>Manuel Neuer in Rocket League</li><br/>
                 <li>Stopped smoking after 5 years</li><br/>
