@@ -136,6 +136,8 @@ footer {
 .member ul li{
   font-size: 0.8rem;
   color: #555;
+  border: 0.1px solid #2c3e50;
+  border-radius: 5%;
 }
 
 .projects {
