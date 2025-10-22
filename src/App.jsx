@@ -1,9 +1,38 @@
 import { useState } from 'react'
-
+import emailjs from 'emailjs-com'
 import './App.css'
 import eryk from './assets/images/eryk.png';
 import giant from './assets/images/giant.png';
 function App() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  })
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    emailjs.send(
+      'service_skolc1x',
+      'template_iho2bkm',
+      formData,
+      'nmvPWeSqX9OeRTb5P'
+    )
+    .then((result) => {
+      alert('Wiadomość wysłana! ✅')
+      console.log(result.text)
+    }, (error) => {
+      alert('Coś poszło nie tak ❌')
+      console.log(error.text)
+    })
+  }
+
   return (
     <>
       <header>
@@ -65,10 +94,11 @@ function App() {
         {/* CONTACT */}
         <section id="contact">
           <h3>Contact</h3>
-          <form>
-            <input type="text" placeholder="Twoje imię" />
-            <input type="email" placeholder="Twój e-mail" />
-            <textarea placeholder="Wiadomość"></textarea>
+          <form onSubmit={handleSubmit}>
+            <input type="text" name="name" placeholder="Twoje imię" onChange={handleChange} required />
+            <input type="email" name="email" placeholder="Twój e-mail" onChange={handleChange} required />
+            <input type="number" name="phone" placeholder="Twój numer telefonu" onChange={handleChange} />
+            <textarea name="message" placeholder="Wiadomość" onChange={handleChange} required></textarea>
             <button type="submit">Wyślij</button>
           </form>
         </section>
