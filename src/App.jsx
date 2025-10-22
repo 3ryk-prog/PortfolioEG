@@ -54,9 +54,9 @@ function App() {
               <h4>Eryk</h4>
               <p>Skills: and Achievements:</p>
               <ul>
-                <li>Manuel Neuer in Rocket League</li>
-                <li>Stopped smoking after 5 years</li>
-                <li>GitHub expert</li>
+                <li>Manuel Neuer in Rocket League</li><br/>
+                <li>Stopped smoking after 5 years</li><br/>
+                <li>GitHub expert</li><br/>
                 <li>Have new MacBook air, so is rich</li>
               </ul>
             </div>
@@ -65,9 +65,9 @@ function App() {
               <h4>Giant</h4>
               <p>Skills and Achievements:</p>
               <ul>
-                <li>Diamond 3, division 3 in Rocket League one year ago</li>
-                <li>Retired legendary footballer of Iskra Pszczyna</li>
-                <li>HTML expert</li>
+                <li>Diamond 3, division 3 in Rocket League one year ago</li><br/>
+                <li>Retired legendary footballer of Iskra Pszczyna</li><br/>
+                <li>HTML expert</li><br/>
                 <li>Have new MacBook air, so is rich</li>
               </ul>
             </div>
