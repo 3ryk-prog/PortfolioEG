@@ -97,7 +97,7 @@ function App() {
           <form onSubmit={handleSubmit}>
             <input type="text" name="name" placeholder="Twoje imię" onChange={handleChange} required />
             <input type="email" name="email" placeholder="Twój e-mail" onChange={handleChange} required />
-            <input type="number" name="phone" placeholder="Twój numer telefonu" onChange={handleChange} />
+            <input type="number" name="phone" placeholder="Twój numer telefonu" onChange={handleChange} required/>
             <textarea name="message" placeholder="Wiadomość" onChange={handleChange} required></textarea>
             <button type="submit">Wyślij</button>
           </form>
