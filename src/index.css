@@ -305,3 +305,54 @@ form button:hover {
   background-color: #1abc9c;
   transform: scale(1.03);
 }
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-container form {
+  flex: 1 1 400px;
+}
+
+.contact-info {
+  flex: 1 1 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.contact-info h4 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.person {
+  margin-bottom: 15px;
+}
+
+.person h5 {
+  color: #1abc9c;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.person p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+}

@@ -125,13 +125,31 @@ const toggleProject = (id) => {
         {/* CONTACT */}
         <section id="contact">
           <h3>Contact</h3>
-          <form onSubmit={handleSubmit}>
-            <input type="text" name="name" placeholder="Twoje imię" onChange={handleChange} required />
-            <input type="email" name="email" placeholder="Twój e-mail" onChange={handleChange} required />
-            <input type="number" name="phone" placeholder="Twój numer telefonu" onChange={handleChange} required/>
-            <textarea name="message" placeholder="Wiadomość" onChange={handleChange} required></textarea>
-            <button type="submit">Wyślij</button>
-          </form>
+          <div className="contact-container">
+            {/* Formularz */}
+            <form onSubmit={handleSubmit}>
+              <input type="text" name="name" placeholder="Twoje imię" onChange={handleChange} required />
+              <input type="email" name="email" placeholder="Twój e-mail" onChange={handleChange} required />
+              <input type="number" name="phone" placeholder="Twój numer telefonu" onChange={handleChange} required/>
+              <textarea name="message" placeholder="Wiadomość" onChange={handleChange} required></textarea>
+              <button type="submit">Wyślij</button>
+            </form>
+
+            {/* Dane kontaktowe */}
+            <div className="contact-info">
+              <h4>Skontaktuj się z nami</h4>
+              <div className="person">
+                <h5>Eryk</h5>
+                <p><b>Email:</b> eryky@gmail.com</p>
+                <p><b>Tel:</b> +48 694 202 137</p>
+              </div>
+              <div className="person">
+                <h5>Giant</h5>
+                <p><b>Email:</b> gianto@gmail.com</p>
+                <p><b>Tel:</b> +48 692 137 420</p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
 
