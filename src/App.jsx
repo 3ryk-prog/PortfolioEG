@@ -110,14 +110,12 @@ const toggleProject = (id) => {
                   {expandedProject === project.id ? "Zwiń" : "Zobacz więcej"}
                 </button>
 
-                {expandedProject === project.id && (
-                  <div className="project-details">
-                    <p>{project.longDesc}</p>
-                    <button onClick={() => window.location.href = project.link}>
-                      Przejdź do projektu
-                    </button>
-                  </div>
-                )}
+                <div className={`project-details ${expandedProject === project.id ? 'show' : ''}`}>
+                  <p>{project.longDesc}</p>
+                  <button onClick={() => window.location.href = project.link}>
+                    Przejdź do projektu
+                  </button>
+                </div>
               </div>
             ))}
           </div>
