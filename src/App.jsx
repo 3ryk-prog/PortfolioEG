@@ -33,6 +33,30 @@ function App() {
     })
   }
 
+  const projectsData = [
+  {
+    id: 1,
+    title: "Projekt 1",
+    shortDesc: "Krótki opis projektu.",
+    longDesc: "To jest bardziej szczegółowy opis projektu 1. Tutaj możesz napisać o technologiach, celu projektu, czy o tym, czego się nauczyliście.",
+    link: "/project1" // przyszła podstrona
+  },
+  {
+    id: 2,
+    title: "Projekt 2",
+    shortDesc: "Krótki opis projektu.",
+    longDesc: "Szczegółowy opis projektu 2. Możesz napisać o funkcjach i pomysłach, jakie tam wykorzystaliście.",
+    link: "/project2"
+  }
+]
+
+const [expandedProject, setExpandedProject] = useState(null)
+
+const toggleProject = (id) => {
+  setExpandedProject(expandedProject === id ? null : id)
+}
+
+
   return (
     <>
       <header>
@@ -78,18 +102,27 @@ function App() {
         <section id="projects">
           <h3>Our Projects</h3>
           <div className="projects">
-            <div className="project-card">
-              <h4>Projekt 1</h4>
-              <p>Krótki opis projektu.</p>
-              <a href="#">Zobacz więcej</a>
-            </div>
-            <div className="project-card">
-              <h4>Projekt 2</h4>
-              <p>Krótki opis projektu.</p>
-              <a href="#">Zobacz więcej</a>
-            </div>
+            {projectsData.map((project) => (
+              <div key={project.id} className="project-card">
+                <h4>{project.title}</h4>
+                <p>{project.shortDesc}</p>
+                <button onClick={() => toggleProject(project.id)}>
+                  {expandedProject === project.id ? "Zwiń" : "Zobacz więcej"}
+                </button>
+
+                {expandedProject === project.id && (
+                  <div className="project-details">
+                    <p>{project.longDesc}</p>
+                    <button onClick={() => window.location.href = project.link}>
+                      Przejdź do projektu
+                    </button>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </section>
+
 
         {/* CONTACT */}
         <section id="contact">
